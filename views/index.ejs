@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hiiii upload files</h1>
+    <form action="upload" method="post" enctype="multipart/form-data">
+        upload file : <input type="file" name="file" id="">
+        <input type="submit">
+    </form>
+    <h1>uploaded files</h1>
+
+    <h1>Views file</h1>
+    <% files.forEach(file => { %>
+
+     <img src="../<%= file.path %>" alt="image" width="300px">
+     
+
+<% }) %>
+    
+
+</body>
+</html>
